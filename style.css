@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  width: 95%;
+  height: 92vh;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.left{
+  width: 60%;
+  background:#f7c600;
+  padding: 55px 80px;
+  position: relative;
+}
+
+.logo{
+  width: 190px;
+}
+
+.left h4{
+  font-size: 14px;
+  letter-spacing: 8px;
+  margin-top: 45px;
+  font-weight: 700;
+}
+
+.left h1{
+  font-size: 120px;
+  margin-top: 25px;
+  font-weight: 900;
+  line-height: 110px;
+}
+
+.left p{
+  width: 360px;
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 31px;
+  font-weight: 500;
+}
+
+.left h3{
+  margin-top: 28px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  border: 18px solid rgba(0,0,0,0.08);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -90px;
+  left: 45px;
+}
+
+.circle::after{
+  content: "";
+  width: 200px;
+  height: 18px;
+  background: rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  transform: translateY(-50%);
+}
+
+.circle::before{
+  content: "";
+  width: 45px;
+  height: 45px;
+  border: 18px solid rgba(0,0,0,0.08);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.right{
+  width: 40%;
+  background: #fae8b4;
+  position: relative;
+}
+
+.pikachu{
+  width: 610px;
+  position: absolute;
+  left: -285px;
+  top: 90px;
+  z-index: 5;
+}
+
+.menu{
+  position: absolute;
+  top: 35px;
+  right: 45px;
+}
+
+.menu div{
+  width: 35px;
+  height: 4px;
+  background: black;
+  margin: 7px 0;
+}
+
+.dots{
+  position: absolute;
+  right: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dots span{
+  width: 11px;
+  height: 11px;
+  background:#f7c600;
+  border-radius: 50%;
+}
+
+.dots span:first-child{
+  background: black;
+}
+
